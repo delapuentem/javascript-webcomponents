@@ -1,0 +1,138 @@
+nav #submenu{
+    /* background-color: pink; */
+    background-color: #ffffff;
+    display: none;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #DAE4EA;
+    padding-bottom: 1rem;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+    z-index: 1;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: translateY(-200px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* Titulo */
+
+nav #submenu .title {
+    /* Titulos de los grid del submenu */
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #DAE4EA;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #586276;
+}
+
+/* Items */
+
+nav #submenu .item{
+    /* background-color: rgb(255, 207, 215); */
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    column-gap: 1rem;
+    padding: 0.8rem 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+}
+
+nav #submenu .item:hover{
+    background-color: #F8FAFB;
+    border: 1px solid #DAE4EA;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav #submenu .item div{
+    /* background-color: rgb(249, 127, 148);*/ 
+}
+
+/* Item image */
+
+nav #submenu .item .item-image {
+    /* Alinear imagen en el medio verticalmente */
+    display:flex;
+    align-items:center;
+}
+
+nav #submenu .item .item-image img{
+    width: 28px;
+}
+
+/* Item text */
+
+nav #submenu .item .item-title, nav #submenu .item .item-description{
+    margin: 0;
+}
+
+nav #submenu .item .item-description {
+    font-size: 12px;
+}
+
+
+
+/* Clientes */
+
+nav #submenu #panel{
+    padding: 1rem 18rem;
+    display: none;
+    grid-template-columns: 55% 25% 1fr;
+    column-gap: 1rem;
+}
+
+nav #submenu #panel .features-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+}
+
+/* Wiki */
+
+nav #submenu #panel .wiki img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+nav #submenu #panel .wiki p{
+    font-weight: 700;
+    font-size: 15px;
+    color:#293745;
+}
+
+
+/* Actions */
+
+nav #submenu .actions p span{
+    margin-right: 5px;
+    padding: 8px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+nav #submenu .actions p span img{
+    filter: invert(36%) sepia(84%) saturate(981%) hue-rotate(179deg) brightness(89%) contrast(100%);
+}
+
+nav #submenu .actions p a,
+nav #submenu .actions p a:link,
+nav #submenu .actions p a:visited,
+nav #submenu .actions p a:active{
+    text-decoration: none;
+    color:#515151;
+    font-size: 15px;
+}
+
+nav #submenu .actions p a:hover{
+    color: #0F70D4;
+}

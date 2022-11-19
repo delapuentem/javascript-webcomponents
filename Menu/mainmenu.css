@@ -1,0 +1,90 @@
+nav {
+    font-family: 'Lato', sans-serif;
+}
+
+nav #mainmenu{
+    /* background-color: rgb(64, 156, 237); */
+    display: grid;
+    padding: 0.8rem 18rem;
+    grid-template-columns: 55px 70% 1fr;
+    border-bottom: 1px solid #DAE4EA;
+    position: relative;
+    z-index: 2;
+}
+
+nav #mainmenu .menu .active{
+    color:#0F70D4;
+    filter: invert(36%) sepia(84%) saturate(981%) hue-rotate(179deg) brightness(89%) contrast(100%);
+}
+
+/* Logo */
+nav #mainmenu .logo {
+display:flex;
+align-items:center;
+}
+
+nav #mainmenu .logo img {
+width: 100%;
+}
+
+nav #mainmenu #branding a{
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    font-size: 18px;
+}
+
+/* Menu */
+
+nav #mainmenu .menu{
+    /* background-color: rgb(164, 204, 239); */
+    /* Alinear en el medio verticalmente el menu */
+    display:flex;
+    align-items:center;
+    
+}
+
+nav #mainmenu .menu ul {
+    /* Eliminar los estilos de lista */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav #mainmenu .menu li {
+    display: inline;
+}
+
+nav #mainmenu .menu li a{
+    /* Estilo de la fuente de texto del menu */
+    text-decoration: none;
+    color: #293745;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+nav #mainmenu .menu li i{
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+nav #mainmenu .menu ul li:not(:last-child) a{
+    /* Dar un margen menos al ultimo elemento del menu */
+    margin-right: 1rem;
+}
+
+
+/* Log in usuario menu */
+
+nav #mainmenu .login{
+    display:flex;
+    align-items:center;
+    justify-content: right;
+}
+
+nav #mainmenu .login img{
+    width: 45px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 0.7rem;
+}

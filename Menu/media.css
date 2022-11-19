@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1540px) {
+    nav #mainmenu {
+        padding: 0.8rem 12rem!important;
+    }
+
+    nav #submenu #panel{
+        padding: 1rem 12rem!important;
+    }  
+  }
+
+  @media only screen and (max-width: 1450px) {
+    nav #mainmenu {
+        padding: 0.8rem 5rem!important;
+    }
+
+    nav #submenu #panel{
+        padding: 1rem 5rem!important;
+    }
+  }
+
+  @media only screen and (max-width: 1220px) {
+    nav #mainmenu {
+        background-color: red;
+    }
+  }
